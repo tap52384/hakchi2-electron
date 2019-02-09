@@ -1,0 +1,29 @@
+{
+  "name": "hakchi2-electron",
+  "version": "0.1.0",
+  "description": "cross-platform version of hakchi2",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^4.0.4"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tap52384/hakchi2-electron.git"
+  },
+  "keywords": [
+    "hakchi2",
+    "snes",
+    "classic"
+  ],
+  "author": "Z. Patrick Lewis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tap52384/hakchi2-electron/issues"
+  },
+  "homepage": "https://github.com/tap52384/hakchi2-electron#readme"
+}
