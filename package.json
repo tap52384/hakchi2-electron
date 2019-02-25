@@ -1,29 +1,65 @@
 {
   "name": "hakchi2-electron",
-  "version": "0.1.0",
-  "description": "cross-platform version of hakchi2",
-  "main": "main.js",
-  "dependencies": {},
-  "devDependencies": {
-    "electron": "^4.0.4"
-  },
+  "productName": "hakchi2-electron",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tap52384/hakchi2-electron.git"
+  "keywords": [],
+  "author": "patricklewis",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "hakchi2_electron"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "hakchi2electron"
+      }
+    }
   },
-  "keywords": [
-    "hakchi2",
-    "snes",
-    "classic"
-  ],
-  "author": "Z. Patrick Lewis",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tap52384/hakchi2-electron/issues"
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "electron-compile": "^6.4.4",
+    "electron-devtools-installer": "^2.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "usb": "^1.5.0",
+    "vue": "^2.1.7"
   },
-  "homepage": "https://github.com/tap52384/hakchi2-electron#readme"
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "4.0.0"
+  }
 }

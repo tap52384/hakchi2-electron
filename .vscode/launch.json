@@ -8,7 +8,14 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/main.js"
+            // "program": "${workspaceFolder}/src/index.js"
+            "program": "/Users/patricklewis/.nvm/versions/node/v10.15.1/bin/electron-forge",
+            "args": [
+                "app-path",
+                "${workspaceFolder}",
+                // "vscode",
+                "start"
+            ]
         }
     ]
 }
