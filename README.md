@@ -9,6 +9,7 @@ Attempting to create a cross-platform version of hakchi2.
 [libusb](https://github.com/libusb/libusb)
 [Twitter Bootstrap](https://getbootstrap.com/docs/4.2/components/progress/#multiple-bars)
 [usb](https://github.com/tessel/node-usb)
+[How to send data to USB device in node.js using libusb](https://stackoverflow.com/a/23571075/1620794)
 
 ## TODO
 
